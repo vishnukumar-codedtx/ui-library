@@ -1,0 +1,56 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+
+# Dependency directories for pnpm
+.pnpm/
+.pnp/
+.pnpm-debug.log*
+
+# Lock files
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Testing
+coverage/
+jest-html-reports/
+*.lcov
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Editor and OS specific files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Lint and formatting
+.eslintcache
+.prettiercache
+
+# Temporary files
+*.tmp
+*.temp
+
+# Rollup cache
+.rollup.cache/
+
+# Miscellaneous
+*.log
+

@@ -1,0 +1,59 @@
+{
+  "name": "ui-library",
+  "version": "1.0.0",
+  "description": "A customizable UI library for React projects.",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "type-check": "tsc --noEmit",
+    "test": "jest --coverage",
+    "lint": "eslint . --ext .ts,.tsx",
+    "format": "prettier --write .",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "ui-library",
+    "react",
+    "components",
+    "design-system"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/ui-library.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/ui-library/issues"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "rollup": "^3.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "@rollup/plugin-commonjs": "^21.0.0",
+    "@rollup/plugin-typescript": "^10.0.0",
+    "typescript": "^5.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "jest": "^29.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0"
+  }
+}
